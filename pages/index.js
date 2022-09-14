@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import '../styles/main.css'
+import Navbar from '../components/navbar'
+
 
 const Logo = () => (
   <>
@@ -8,53 +10,27 @@ const Logo = () => (
   </>
 )
 
-const Menu = () => (
-  <div className="p-2 flex items-center">
-    <a href="http://github.com/codarme" target="_blank">
-      github
-    </a>
-
-    <a href="http://instagram.com/codar.me" target="_blank">
-      instagram
-    </a>
-
-    <a href="http://youtube.com/codarme" target="_blank">
-      youtube
-    </a>
-  </div>
-)
-
 const Banner = () => (
-  <div className="container max-w-5xl m-auto p-6 flex-1 flex flex-col justify-center items-center sm:items-start text-center sm:text-left">
-    <span className="text-gray">Criamos a codar.me para te ajudar a</span>
-    <div className="uppdercase text-4xl font-extrabold leading-snug">
-      Desenvoler <span className="text-green">software</span> de verdade
-    </div>
-    <span className="text-gray">
-      e se tornar um desenvolvedor acima da média
-    </span>
-  </div>
+  <img src="/bannerCandidatosDoBrasil.jpg" width={150} className="w-full" />
 )
 
 const Header = () => (
-  <div className="p-2 container max-w-5xl m-auto flex justify-between items-center">
-    <Logo />
-    <Menu />
+  <div className="flex flex-col justify-between items-center bg-blue">
+    <Banner />
+    <Navbar />
   </div>
 )
 
 const Home = () => (
   <div
     className="flex flex-col flex-1"
-    style={{ background: 'url(/bg.png) no-repeat center/cover' }}
   >
     <Head>
-      <title>Codar.me - Tailwind + NextJS</title>
-      <link rel="icon" href="/favicon.ico" />
+      <title>Candidatos do Brasil</title>
+      <link rel="icon" href="/replaceFavicon.ico" />
     </Head>
 
     <Header />
-    <Banner />
   </div>
 )
 

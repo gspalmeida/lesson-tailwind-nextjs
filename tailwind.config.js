@@ -7,6 +7,7 @@ module.exports = {
         gunmetal: '#2e3142',
         green: '#43bc70',
         red: '#F25F5C',
+        blue: '#0E5379'
       },
       textColor: {
         primary: '#FFFFFF',

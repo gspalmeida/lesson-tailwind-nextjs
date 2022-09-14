@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-nextjs",
+  "name": "candidatos-do-brasil",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.1",
+    "@heroicons/react": "^2.0.11",
     "@zeit/next-css": "^1.0.1",
     "autoprefixer": "^9.7.4",
     "next": "9.3.0",
